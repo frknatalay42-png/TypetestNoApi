@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Typing Speed Test</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Typing Speed Test</h1>
+      <p class="subtitle">Type the sentence as accurately and quickly as you can.</p>
+    </header>
+
+    <section class="card">
+      <div class="sentence-area" id="sentenceArea" aria-live="polite"></div>
+
+      <div class="input-row">
+        <textarea id="input" placeholder="Start typing here..." rows="3" autofocus></textarea>
+        <div class="controls">
+          <button id="startBtn" class="primary">Start / Restart</button>
+          <button id="nextBtn" class="ghost">New Sentence</button>
+          <button id="resetBest" class="ghost">Reset Best</button>
+        </div>
+      </div>
+
+      <div class="info-row">
+        <div class="stat">
+          <div class="label">Time</div>
+          <div id="time">0.0s</div>
+        </div>
+        <div class="stat">
+          <div class="label">WPM</div>
+          <div id="wpm">0</div>
+        </div>
+        <div class="stat">
+          <div class="label">Accuracy</div>
+          <div id="accuracy">0%</div>
+        </div>
+        <div class="stat">
+          <div class="label">Best WPM</div>
+          <div id="best">0</div>
+        </div>
+      </div>
+
+      <div class="footer-note">
+        Tip: Timer starts on your first keystroke. Press Esc to clear input.
+      </div>
+    </section>
+  </main>
+
+  <!-- Corrected: removed type="module" -->
+  <script src="script.js"></script>
+</body>
+</html>
